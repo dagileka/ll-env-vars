@@ -4,8 +4,6 @@ env:
 on: [push]
 jobs:
   ubuntu:
-    env:
-      JOB_ENVIRONMENT_VARIABLE: 'custom job environment variable for ubuntu'
     runs-on: ubuntu-latest
     steps:
       - name: Print custom environment variables from ubuntu-latest
