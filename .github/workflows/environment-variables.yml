@@ -20,8 +20,6 @@ jobs:
           echo "${{ env.JOB_ENVIRONMENT_VARIABLE }}"
           echo "${{ env.STEP_ENVIRONMENT_VARIABLE }} Not defined"
   windows:
-    env:
-      JOB_ENVIRONMENT_VARIABLE: 'custom job environment variable for windows'
     runs-on: windows-latest
     steps:
       - name: Print custom environment variables from windows-latest
